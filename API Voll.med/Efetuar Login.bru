@@ -1,0 +1,18 @@
+meta {
+  name: Efetuar Login
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:8080/login
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "login": "ana.souza@voll.med",
+      "senha": "123456"
+  }
+}

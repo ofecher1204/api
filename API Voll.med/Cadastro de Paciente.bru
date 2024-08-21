@@ -1,0 +1,28 @@
+meta {
+  name: Cadastro de Paciente
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:8080/pacientes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+  "nome": "Mauricio Costa",
+  "email": "mauricio.costa@gmail.com",
+  "cpf": "20589365245",
+  "telefone": "41999635487",
+  "endereco": {
+      "logradouro": "rua 2",
+      "bairro": "Bairro",
+      "cep": "65345178",
+      "cidade": "Brasilia",
+      "uf": "DF"
+      
+      }
+  }
+}
